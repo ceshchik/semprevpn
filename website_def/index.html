@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Intelligence Company — Literary journal beside a bonfire</title>
+  <meta name="description" content="General Intelligence Company uses an editorial, literary visual language. Featuring a 4K 5-minute cinematic film, hand-painted atmospheric illustrations, and quiet autonomous systems.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/images/pixel_flower.jpg">
+</head>
+<body>
+
+  <!-- =======================================================================
+       1. Frosted Navigation Pill (Floating Top Center)
+       ======================================================================= -->
+  <header class="nav-pill-wrapper">
+    <nav class="nav-pill" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" title="General Intelligence Company">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <span>GIC</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#film" class="nav-link">Film (4K)</a></li>
+        <li><a href="#philosophy" class="nav-link">Writing</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#colophon" class="nav-link">Colophon</a></li>
+      </ul>
+
+      <a href="#dispatch" class="nav-cta">
+        <span>Get Cofounder</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <!-- =======================================================================
+       2. Full-Bleed Illustrated Hero Section
+       ======================================================================= -->
+  <section id="hero" class="hero-section" style="background-image: url('assets/images/moonlit_skyline.jpg');">
+    <div class="hero-overlay-mask"></div>
+
+    <div class="hero-overlay-card">
+      <div class="hero-tagline">General Intelligence Company</div>
+      <h1 class="hero-title">Literary journal beside a bonfire.</h1>
+      <p class="hero-description">
+        A quiet companion for deliberative minds. Hand-painted atmosphere meeting autonomous machine intelligence, set on warm parchment with measured restraint.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#film" class="btn-primary-outline">
+          <span>Watch 4K Film (05:00)</span>
+          <span class="btn-icon-circle">→</span>
+        </a>
+
+        <a href="#philosophy" class="btn-secondary-outline">
+          <span>Read Monograph</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       3. Dedicated 4K 5-Minute Cinematic Film Section
+       ======================================================================= -->
+  <section id="film" class="section video-feature-section">
+    <div class="container">
+      <div class="section-header-editorial">
+        <div class="section-eyebrow">Cinematic Essay • 05:00 Runtime • 4K UHD 2160p</div>
+        <h2 class="section-title">The Bonfire &amp; The Machine: Five Minutes on the Horizon</h2>
+        <p class="section-lead">
+          A five-minute cinematic contemplation on the quiet architecture of autonomous thought. Rendered in native 3840×2160 UHD resolution with synthesized binaural acoustic warmth and synchronized literary reflections.
+        </p>
+      </div>
+
+      <!-- Video Player Container -->
+      <div class="video-player-container" id="video-container">
+        <!-- Screen View -->
+        <div class="video-screen-wrapper" id="screen-wrapper">
+          <video id="main-video" poster="assets/images/video_poster.jpg" playsinline preload="metadata">
+            <source src="assets/video/film_4k_5min.mp4" type="video/mp4">
+            <track label="English" kind="subtitles" srclang="en" src="assets/video/captions.vtt" default>
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- 4K UHD Badge -->
+          <div class="video-badge-4k">
+            <span class="dot"></span>
+            <span>4K UHD 2160p</span>
+          </div>
+
+          <!-- Big Play Center Button -->
+          <button class="big-play-btn" id="big-play-btn" aria-label="Play Video">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </button>
+
+          <!-- On-screen Subtitles Overlay -->
+          <div class="video-subtitles-overlay" id="subtitles-overlay">
+            General Intelligence Company — Five Minutes on the Horizon
+          </div>
+        </div>
+
+        <!-- Controls Bar -->
+        <div class="video-controls-bar">
+          <!-- Timeline Scrubber with 5 Chapter Notches (60s intervals across 300s) -->
+          <div class="scrubber-track-container" id="scrubber-container">
+            <div class="scrubber-track">
+              <!-- Chapter Notches (20%, 40%, 60%, 80%) -->
+              <span class="scrubber-marker" style="left: 20%;" title="Chapter II (01:00)"></span>
+              <span class="scrubber-marker" style="left: 40%;" title="Chapter III (02:00)"></span>
+              <span class="scrubber-marker" style="left: 60%;" title="Chapter IV (03:00)"></span>
+              <span class="scrubber-marker" style="left: 80%;" title="Chapter V (04:00)"></span>
+
+              <div class="scrubber-progress" id="scrubber-progress">
+                <span class="scrubber-handle" id="scrubber-handle"></span>
+              </div>
+            </div>
+            <div class="scrubber-tooltip" id="scrubber-tooltip">00:00</div>
+          </div>
+
+          <!-- Action Buttons Row -->
+          <div class="controls-row">
+            <div class="controls-left">
+              <!-- Play / Pause -->
+              <button class="ctrl-btn" id="play-pause-btn" aria-label="Play or Pause">
+                <svg id="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <svg id="pause-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                  <rect x="6" y="4" width="4" height="16"></rect>
+                  <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+              </button>
+
+              <!-- Volume & Mute -->
+              <div class="volume-container">
+                <button class="ctrl-btn" id="mute-btn" aria-label="Mute or Unmute">
+                  <svg id="volume-high-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  </svg>
+                  <svg id="volume-muted-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <line x1="23" y1="9" x2="17" y2="15"></line>
+                    <line x1="17" y1="9" x2="23" y2="15"></line>
+                  </svg>
+                </button>
+                <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.05" value="1" aria-label="Volume">
+              </div>
+
+              <!-- Time display -->
+              <div class="time-display">
+                <span class="current-time" id="current-time">00:00</span> / <span id="duration-time">05:00</span>
+              </div>
+            </div>
+
+            <div class="controls-right">
+              <!-- Speed Selector -->
+              <select class="speed-select" id="speed-select" title="Playback Speed">
+                <option value="0.75">0.75×</option>
+                <option value="1" selected>1.0×</option>
+                <option value="1.25">1.25×</option>
+                <option value="1.5">1.5×</option>
+              </select>
+
+              <!-- Resolution Quality Switcher -->
+              <select class="quality-badge-select" id="quality-select" title="Resolution Quality">
+                <option value="4k" selected>4K 2160p</option>
+                <option value="1080p">1080p HD</option>
+              </select>
+
+              <!-- Subtitles / CC -->
+              <button class="ctrl-btn" id="cc-btn" title="Subtitles (CC)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="M10 10H7a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h3"></path>
+                  <path d="M19 10h-3a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h3"></path>
+                </svg>
+              </button>
+
+              <!-- Theater Mode -->
+              <button class="ctrl-btn" id="theater-btn" title="Theater Mode">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </button>
+
+              <!-- Fullscreen -->
+              <button class="ctrl-btn" id="fullscreen-btn" title="Fullscreen">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Chapter Jump Navigation Grid -->
+      <div class="video-chapters-grid">
+        <button class="chapter-card-btn active" data-time="0">
+          <div class="chapter-meta">
+            <span class="chapter-num">Chapter I</span>
+            <span class="chapter-time">00:00</span>
+          </div>
+          <div class="chapter-title">The Meadow at Dusk</div>
+        </button>
+
+        <button class="chapter-card-btn" data-time="60">
+          <div class="chapter-meta">
+            <span class="chapter-num">Chapter II</span>
+            <span class="chapter-time">01:00</span>
+          </div>
+          <div class="chapter-title">Architecture of the Bonfire</div>
+        </button>
+
+        <button class="chapter-card-btn" data-time="120">
+          <div class="chapter-meta">
+            <span class="chapter-num">Chapter III</span>
+            <span class="chapter-time">02:00</span>
+          </div>
+          <div class="chapter-title">Manhattan Under Cherry Blossoms</div>
+        </button>
+
+        <button class="chapter-card-btn" data-time="180">
+          <div class="chapter-meta">
+            <span class="chapter-num">Chapter IV</span>
+            <span class="chapter-time">03:00</span>
+          </div>
+          <div class="chapter-title">The Pixelated Blossom</div>
+        </button>
+
+        <button class="chapter-card-btn" data-time="240">
+          <div class="chapter-meta">
+            <span class="chapter-num">Chapter V</span>
+            <span class="chapter-time">04:00</span>
+          </div>
+          <div class="chapter-title">Colophon &amp; The Quiet Dawn</div>
+        </button>
+      </div>
+
+      <!-- Synchronized Literary Transcript Panel -->
+      <div class="transcript-panel">
+        <div class="transcript-header">
+          <div>
+            <h3 class="serif-heading" style="font-size: 24px; margin-bottom: 4px;">Synchronized Literary Monograph</h3>
+            <p style="font-size: 14px; color: var(--color-ash);">Click any passage to seek the 4K film to its corresponding timestamp.</p>
+          </div>
+          <span style="font-size: 13px; font-weight: 500; color: var(--color-signal-blue);">● Live Sync Active</span>
+        </div>
+
+        <div class="transcript-items-flow">
+          <div class="transcript-entry active" data-start="0" data-end="60">
+            <span class="transcript-timestamp">00:00</span>
+            <div class="transcript-text">
+              “In the twilight before nightfall, wildflowers bend to a quiet breeze. We began not with calculation, but with patient observation. The boundary between language and consciousness is drawn in quiet places. Golden poppies close their petals as cool air sweeps the grass. What kind of mind emerges when we stop demanding speed and begin seeking depth?”
+            </div>
+          </div>
+
+          <div class="transcript-entry" data-start="60" data-end="120">
+            <span class="transcript-timestamp">01:00</span>
+            <div class="transcript-text">
+              “A fire lit beside an open journal in the wilderness. The crackle of cedar wood against stone; embers drifting toward the Milky Way like thoughts released into the ether. To construct autonomous intelligence is to hold vigil: watching small sparks organize themselves into sustained warmth. A coordinator agent does not dictate; it listens to the silence between workers.”
+            </div>
+          </div>
+
+          <div class="transcript-entry" data-start="120" data-end="180">
+            <span class="transcript-timestamp">02:00</span>
+            <div class="transcript-text">
+              “Across the East River, the city rests bathed in nocturnal indigo. Cherry blossoms frame the moonlit suspension bridges. Towers of steel and glass hum with silent fiber optics. In the midnight hours, millions of autonomous processes converse without fanfare. Not an onslaught of automation, but a quiet companion to human curiosity.”
+            </div>
+          </div>
+
+          <div class="transcript-entry" data-start="180" data-end="240">
+            <span class="transcript-timestamp">03:00</span>
+            <div class="transcript-text">
+              “An artifact of discrete mathematics amidst continuous oil paint. Sixteen bits of yellow petals and a soft rose center. The deliberate rupture that reminds us: all thought can be reduced to simple elegance. Simplicity is not the absence of complexity, but its mastery. Isolated agents with strict boundary conditions yielding harmonious intelligence.”
+            </div>
+          </div>
+
+          <div class="transcript-entry" data-start="240" data-end="300">
+            <span class="transcript-timestamp">04:00</span>
+            <div class="transcript-text">
+              “Morning mist lifts slowly from the green valley. A solitary stone cottage catches the first amber rays of sunrise. The candle in the window flickers out as natural daylight returns. Intelligence is neither spectacle nor dominion. It is an editorial pursuit: clarifying what is true, preserving what is human. Set in ppmondwest and af. fefffc.”
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       4. Editorial Philosophy & White Content Cards Grid
+       ======================================================================= -->
+  <section id="philosophy" class="section">
+    <div class="container">
+      <div class="section-header-editorial">
+        <div class="section-eyebrow">The Editorial Method</div>
+        <h2 class="section-title">An architecture that whispers.</h2>
+        <p class="section-lead">
+          Components whisper — 4px and 8px radii, hairline 1px borders in mist, subtle backdrop-blur on navigation, no decorative shadows. The canvas is warm parchment, letting hand-painted digital illustrations do the emotional work.
+        </p>
+      </div>
+
+      <div class="cards-grid-3">
+        <!-- Card 1 -->
+        <div class="white-content-card">
+          <div>
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Book-Page Atmosphere</h3>
+            <p class="card-body">
+              The page background is <code>#fefffc</code> (Parchment), slightly creamier than pure white. Cards elevate on pure white <code>#ffffff</code> with 1px hairline borders in green-tinted <code>#dee2de</code> (Mist).
+            </p>
+          </div>
+          <a href="#colophon" class="ghost-text-link">
+            <span>Explore typography tokens</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="white-content-card">
+          <div>
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Single Chromatic Accent</h3>
+            <p class="card-body">
+              Color is nearly absent. <code>#41a1cf</code> (Signal Blue) appears solely as an outlined action border and subtle link emphasis. It is never filled, preserving the quiet literary dignity.
+            </p>
+          </div>
+          <a href="#dispatch" class="ghost-text-link">
+            <span>Partner as cofounder</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="white-content-card">
+          <div>
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="card-title">Deliberation Over Velocity</h3>
+            <p class="card-body">
+              Display serif headings set at weight 400 with tight <code>-0.04em</code> tracking. Weight 400 even at 54px creates a confident literary register rather than the 700-weight shouts common in modern tech.
+            </p>
+          </div>
+          <a href="#architecture" class="ghost-text-link">
+            <span>Inspect system diagram</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       5. Two-Column Diagram Section (Figure 1: Isolated Agent Squares)
+       ======================================================================= -->
+  <section id="architecture" class="section">
+    <div class="container">
+      <div class="diagram-split-section">
+        <!-- Left Column: Explanatory Text -->
+        <div>
+          <div class="section-eyebrow">System Architecture • Figure 1.0</div>
+          <h2 class="serif-heading" style="font-size: 38px; line-height: 1.15; margin-bottom: 16px;">
+            Isolated agents, coordinated deliberation.
+          </h2>
+          <p style="margin-bottom: 20px; font-size: 16px; color: var(--color-charcoal); line-height: 1.6;">
+            Visual explanations are housed in dedicated diagram cards: 16px border-radius, hairline borders, and subtle shadow. The architecture operates through a central coordinator that orchestrates specialized autonomous agents within strict sandbox boundaries.
+          </p>
+          <p style="margin-bottom: 28px; font-size: 15px; color: var(--color-ash); line-height: 1.5;">
+            No agent shares raw memory state; communication is strictly verified through typed message passing, avoiding cognitive drift and maintaining editorial truth.
+          </p>
+
+          <a href="#film" class="btn-primary-outline">
+            <span>View Architecture in 4K Film</span>
+            <span class="btn-icon-circle">→</span>
+          </a>
+        </div>
+
+        <!-- Right Column: Diagram Card Container -->
+        <div class="diagram-card">
+          <div class="diagram-svg-wrapper">
+            <svg width="100%" height="320" viewBox="0 0 600 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Coordinator Node -->
+              <rect x="220" y="24" width="160" height="60" rx="8" fill="#ffffff" stroke="#282834" stroke-width="1.5" />
+              <text x="300" y="52" fill="#2c2c2c" font-family="'Fraunces', serif" font-size="15" text-anchor="middle" font-weight="400">Coordinator Node</text>
+              <text x="300" y="68" fill="#646464" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Central Deliberation</text>
+
+              <!-- Lines from Coordinator -->
+              <path d="M300 84 V120 H100 V160" stroke="#dee2de" stroke-width="1.5" stroke-dasharray="4 4" />
+              <path d="M300 84 V160" stroke="#41a1cf" stroke-width="1.5" />
+              <path d="M300 84 V120 H500 V160" stroke="#dee2de" stroke-width="1.5" stroke-dasharray="4 4" />
+
+              <!-- Left Agent: Research -->
+              <rect x="30" y="160" width="140" height="74" rx="8" fill="#ffffff" stroke="#dee2de" stroke-width="1.2" />
+              <circle cx="50" cy="184" r="5" fill="#41a1cf" />
+              <text x="64" y="188" fill="#2c2c2c" font-family="'Inter', sans-serif" font-size="13" font-weight="500">Agent Alpha</text>
+              <text x="64" y="204" fill="#646464" font-family="'Inter', sans-serif" font-size="11">Corpus Explorer</text>
+              <text x="40" y="222" fill="#b4b8b4" font-family="'Inter', sans-serif" font-size="10">Sandbox Isolation</text>
+
+              <!-- Center Agent: Synthesis -->
+              <rect x="230" y="160" width="140" height="74" rx="8" fill="#ffffff" stroke="#41a1cf" stroke-width="1.5" />
+              <circle cx="250" cy="184" r="5" fill="#0081c0" />
+              <text x="264" y="188" fill="#2c2c2c" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Agent Prime</text>
+              <text x="264" y="204" fill="#41a1cf" font-family="'Inter', sans-serif" font-size="11">Editorial Synthesis</text>
+              <text x="240" y="222" fill="#646464" font-family="'Inter', sans-serif" font-size="10">Strict Type Proofs</text>
+
+              <!-- Right Agent: Verification -->
+              <rect x="430" y="160" width="140" height="74" rx="8" fill="#ffffff" stroke="#dee2de" stroke-width="1.2" />
+              <circle cx="450" cy="184" r="5" fill="#282834" />
+              <text x="464" y="188" fill="#2c2c2c" font-family="'Inter', sans-serif" font-size="13" font-weight="500">Agent Omega</text>
+              <text x="464" y="204" fill="#646464" font-family="'Inter', sans-serif" font-size="11">Formal Verifier</text>
+              <text x="440" y="222" fill="#b4b8b4" font-family="'Inter', sans-serif" font-size="10">Deterministic Sandbox</text>
+
+              <!-- Bottom Feedback Bus -->
+              <path d="M100 234 V270 H500 V234" stroke="#dee2de" stroke-width="1.2" stroke-linecap="round" />
+              <path d="M300 234 V284" stroke="#41a1cf" stroke-width="1.5" />
+              <rect x="220" y="284" width="160" height="26" rx="4" fill="#f9faf7" stroke="#dee2de" />
+              <text x="300" y="301" fill="#444141" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle" font-weight="500">Typed Monograph Protocol</text>
+            </svg>
+          </div>
+          <div class="diagram-caption">
+            <strong>Figure 1.</strong> The isolated agent coordinator schema. Discrete workers emit structured hypotheses evaluated against human editorial principles before convergence.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       6. Singular Atmospheric Cerulean Accent Section
+       ======================================================================= -->
+  <section class="section cerulean-accent-section">
+    <div class="container">
+      <div class="cerulean-card">
+        <div style="font-family: var(--font-af); font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.85; margin-bottom: 12px;">
+          Atmospheric Punctuation • Token: --color-cerulean (#0081c0)
+        </div>
+        <h2 class="cerulean-title">
+          The lone moment of pure color intensity in an otherwise monochrome landscape.
+        </h2>
+        <p class="cerulean-text">
+          General Intelligence Company reserves saturated chromatic surfaces for singular moments of atmospheric punctuation. Here, the electric blue of early evening reminds us that calm is a conscious aesthetic choice, not a lack of conviction.
+        </p>
+        <a href="#dispatch" class="cerulean-btn-white">
+          <span>Inquire for Fellowship</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       7. Pixelated Blossom Section (Deliberate Aesthetic Contrast)
+       ======================================================================= -->
+  <section class="pixel-contrast-section">
+    <div class="container">
+      <div class="pixel-contrast-grid">
+        <div class="pixel-frame">
+          <img src="assets/images/pixel_flower.jpg" alt="Pixelated yellow and pink flower icon" width="240" height="240">
+        </div>
+
+        <div>
+          <div class="section-eyebrow">Aesthetic Divergence • 16-Bit Glyph</div>
+          <h2 class="serif-heading" style="font-size: 38px; line-height: 1.15; margin-bottom: 16px;">
+            The pixelated flower: a deliberate contrast.
+          </h2>
+          <p style="font-size: 16px; color: var(--color-charcoal); line-height: 1.6; margin-bottom: 16px;">
+            The illustrations across the site are hand-painted, digital oils with visible brush texture and atmospheric depth. The pixelated flower is the one element that breaks the painterly language — a deliberate contrast.
+          </p>
+          <p style="font-size: 15px; color: var(--color-ash); line-height: 1.5; margin-bottom: 24px;">
+            It serves as a visual reminder of discrete computation: sharp square pixels living peacefully upon the warm book-page parchment of <code>#fefffc</code>.
+          </p>
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <span style="font-family: var(--font-af); font-size: 13px; color: var(--color-ash);">Color Palette:</span>
+            <span style="display: inline-block; width: 14px; height: 14px; background: #fefffc; border: 1px solid #b4b8b4; border-radius: 2px;" title="#fefffc Parchment"></span>
+            <span style="display: inline-block; width: 14px; height: 14px; background: #41a1cf; border-radius: 2px;" title="#41a1cf Signal Blue"></span>
+            <span style="display: inline-block; width: 14px; height: 14px; background: #0081c0; border-radius: 2px;" title="#0081c0 Cerulean"></span>
+            <span style="display: inline-block; width: 14px; height: 14px; background: #282834; border-radius: 2px;" title="#282834 Twilight"></span>
+            <span style="display: inline-block; width: 14px; height: 14px; background: #1f1f29; border-radius: 2px;" title="#1f1f29 Dusk"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       8. Paper Form Input Section (Linen Wash, Flat Edges, Bottom-Only Border)
+       ======================================================================= -->
+  <section id="dispatch" class="section dispatch-section">
+    <div class="container">
+      <div class="dispatch-container">
+        <div class="section-eyebrow">The Printed Monograph</div>
+        <h2 class="serif-heading" style="font-size: 38px; line-height: 1.15; margin-bottom: 14px;">
+          Receive the quarterly journal beside your fire.
+        </h2>
+        <p style="font-size: 16px; color: var(--color-ash); line-height: 1.5;">
+          We print small physical editions on 120gsm uncoated paper. Enter your address or email to receive private dispatches and cofounder inquiries.
+        </p>
+
+        <form class="paper-input-group" onsubmit="event.preventDefault(); alert('Thank you. Your dispatch request has been recorded.');">
+          <input type="email" class="paper-input" placeholder="colleague@institution.org" required aria-label="Email Address">
+          <button type="submit" class="btn-filled-dark">
+            <span>Request Dispatch</span>
+            <span>→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       9. Colophon Footer (Editorial Book Colophon Style)
+       ======================================================================= -->
+  <footer id="colophon" class="colophon-footer">
+    <div class="container">
+      <div class="colophon-statement">
+        “General Intelligence Company operates on the premise that clarity of thought precedes power of compute. A literary journal beside a bonfire.”
+      </div>
+
+      <div class="colophon-meta-row">
+        <div>
+          <div class="colophon-col-title">About the Edition</div>
+          <p style="font-size: 14px; line-height: 1.6; color: var(--color-ash);">
+            Set in <strong>ppmondwest</strong> display serif (weight 400 at 54px with -0.04em tracking) and <strong>af</strong> sans (15px weight 500). Printed upon warm parchment canvas (<code>#fefffc</code>).
+          </p>
+        </div>
+
+        <div>
+          <div class="colophon-col-title">Cinematic Works</div>
+          <ul class="colophon-list">
+            <li><a href="#film">Five Minutes on the Horizon (4K)</a></li>
+            <li><a href="#film">Chapter I: The Meadow at Dusk</a></li>
+            <li><a href="#film">Chapter II: Architecture of the Fire</a></li>
+            <li><a href="#film">Chapter III: Manhattan Skyline</a></li>
+            <li><a href="#film">Chapter IV: The Pixelated Blossom</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="colophon-col-title">Publications</div>
+          <ul class="colophon-list">
+            <li><a href="#philosophy">Editorial Manifesto</a></li>
+            <li><a href="#architecture">Isolated Agent Coordinators</a></li>
+            <li><a href="#philosophy">The Quiet Machine</a></li>
+            <li><a href="#dispatch">Quarterly Monograph Vol. IV</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="colophon-col-title">Organization</div>
+          <ul class="colophon-list">
+            <li><a href="#hero">General Intelligence Company</a></li>
+            <li><a href="#dispatch">Cofounder Inquiries</a></li>
+            <li><a href="#colophon">Design System Specification</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener">Source Code &amp; Models</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="colophon-bottom-bar">
+        <div>© 2026 General Intelligence Company. All rights reserved.</div>
+        <div>New York • Oxford • Kyoto • fefffc</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       10. Cookie Consent Banner (Bottom-Right Minimalist)
+       ======================================================================= -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie Preferences">
+    <span>We store strictly necessary local session preferences for 4K video playback.</span>
+    <button class="cookie-btn" id="cookie-decline">Decline</button>
+    <div class="cookie-divider"></div>
+    <button class="cookie-btn" id="cookie-accept">Accept</button>
+  </div>
+
+  <!-- Interactive Scripts -->
+  <script src="js/player.js"></script>
+</body>
+</html>

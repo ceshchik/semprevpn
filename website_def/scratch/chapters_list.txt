@@ -1,0 +1,11 @@
+file '../assets/images/wildflower_meadow.jpg'
+duration 60
+file '../assets/images/nocturnal_bonfire.jpg'
+duration 60
+file '../assets/images/moonlit_skyline.jpg'
+duration 60
+file '../assets/images/pixel_flower.jpg'
+duration 60
+file '../assets/images/dawn_horizon.jpg'
+duration 60
+file '../assets/images/dawn_horizon.jpg'
